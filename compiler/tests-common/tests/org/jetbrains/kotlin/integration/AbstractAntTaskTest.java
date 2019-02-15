@@ -42,8 +42,6 @@ public abstract class AbstractAntTaskTest extends KotlinIntegrationTestBase {
                 "-Dkotlin.lib=" + KotlinIntegrationTestBase.getCompilerLib(),
                 "-Dkotlin.runtime.jar=" + ForTestCompileRuntime.runtimeJarForTests().getAbsolutePath(),
                 "-Dkotlin.reflect.jar=" + ForTestCompileRuntime.reflectJarForTests().getAbsolutePath(),
-                "-Dkotlin.stdlib.jdk7.jar=" + new File("dist/kotlinc/lib/kotlin-stdlib-jdk7.jar").getAbsolutePath(),
-                "-Dkotlin.stdlib.jdk8.jar=" + new File("dist/kotlinc/lib/kotlin-stdlib-jdk8.jar").getAbsolutePath(),
                 "-Dtest.data=" + testDataDir,
                 "-Dtemp=" + tmpdir,
                 "-cp", antClasspath,
